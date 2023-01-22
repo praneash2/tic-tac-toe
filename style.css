@@ -1,0 +1,44 @@
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+:root{
+    --CELL_SIZE : 100px;
+}
+#board{
+    display:grid;
+    width: calc(var(--CELL_SIZE)*3);
+    height: calc(var(--CELL_SIZE)*3);
+    grid-template-columns: repeat(3,1fr);
+}
+
+.cell{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:var(--CELL_SIZE);
+    width: var(--CELL_SIZE);
+    background-color: aqua;
+    padding:5px;
+    border:1px solid rgb(7, 7, 7);
+    cursor: pointer;
+}
+#result{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding:10px;
+    height:10px;
+    width:200px;
+    background-color: rgb(237, 111, 89);
+    margin: 10ex;
+}
